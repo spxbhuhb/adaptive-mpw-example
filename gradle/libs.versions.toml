@@ -1,0 +1,71 @@
+[versions]
+
+ios-support = "none"
+
+adaptive = "0.25.705-RC1"
+coroutines = "1.7.3"
+datetime = "0.4.0"
+gradle-download-plugin = "5.5.0"
+gradle-maven-publish = "0.29.0"
+junit = "4.13.2"
+junit-bom = "5.8.0"
+kotlin = "2.1.20"
+kotlin-wrappers = "1.0.0-pre.760"
+kotlinx-io = "0.5.3"
+ktor = "2.3.11"
+logback = "1.5.6"
+shadow = "8.1.1"
+slf4j = "2.0.13"
+
+[libraries]
+
+adaptive-core-core = { module = "fun.adaptive:core-core", version.ref = "adaptive" }
+adaptive-core-ui = { module = "fun.adaptive:core-ui", version.ref = "adaptive" }
+
+adaptive-grove-lib = { module = "fun.adaptive:grove-lib", version.ref = "adaptive" }
+adaptive-grove-runtime = { module = "fun.adaptive:grove-runtime", version.ref = "adaptive" }
+
+adaptive-lib-app = { module = "fun.adaptive:lib-app", version.ref = "adaptive" }
+adaptive-lib-auth = { module = "fun.adaptive:lib-auth", version.ref = "adaptive" }
+adaptive-lib-chart = { module = "fun.adaptive:lib-chart", version.ref = "adaptive" }
+adaptive-lib-graphics = { module = "fun.adaptive:lib-graphics", version.ref = "adaptive" }
+adaptive-lib-ktor = { module = "fun.adaptive:lib-ktor", version.ref = "adaptive" }
+adaptive-lib-document = { module = "fun.adaptive:lib-document", version.ref = "adaptive" }
+adaptive-lib-test = { module = "fun.adaptive:lib-test", version.ref = "adaptive" }
+adaptive-lib-ui = { module = "fun.adaptive:lib-ui", version.ref = "adaptive" }
+adaptive-lib-ui-mpw = { module = "fun.adaptive:lib-ui-mpw", version.ref = "adaptive" }
+adaptive-lib-util = { module = "fun.adaptive:lib-util", version.ref = "adaptive" }
+adaptive-lib-value = { module = "fun.adaptive:lib-value", version.ref = "adaptive" }
+
+kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
+
+kotlin-wrappers-web = { module = "org.jetbrains.kotlin-wrappers:kotlin-web", version.ref = "kotlin-wrappers" }
+
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutines" }
+kotlinx-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "coroutines" }
+kotlinx-coroutines-debug = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-debug", version.ref = "coroutines" }
+
+kotlinx-datetime = { module = "org.jetbrains.kotlinx:kotlinx-datetime", version.ref = "datetime" }
+
+kotlinx-io = { module = "org.jetbrains.kotlinx:kotlinx-io-core", version.ref = "kotlinx-io" }
+
+ktor-client-core = { module = "io.ktor:ktor-client-core", version.ref = "ktor" }
+ktor-client-okhttp = { module = "io.ktor:ktor-client-okhttp", version.ref = "ktor" }
+ktor-client-websockets = { module = "io.ktor:ktor-client-websockets", version.ref = "ktor" }
+ktor-server-core = { module = "io.ktor:ktor-server-core-jvm", version.ref = "ktor" }
+ktor-server-netty = { module = "io.ktor:ktor-server-netty", version.ref = "ktor" }
+ktor-server-websockets = { module = "io.ktor:ktor-server-websockets", version.ref = "ktor" }
+ktor-server-forwardedheaders = { module = "io.ktor:ktor-server-forwarded-header", version.ref = "ktor" }
+
+logback = { module = "ch.qos.logback:logback-classic", version.ref = "logback" }
+
+slf4j = { module = "org.slf4j:slf4j-api", version.ref = "slf4j" }
+slf4j-nop = { module = "org.slf4j:slf4j-nop", version.ref = "slf4j" }
+
+[plugins]
+
+adaptive = { id = "fun.adaptive", version.ref = "adaptive" }
+download = { id = "de.undercouch.download", version.ref = "gradle-download-plugin" }
+kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+ktor = { id = "io.ktor.plugin", version.ref = "ktor" }
+shadow = { id = "com.github.johnrengelman.shadow", version.ref = "shadow" }
